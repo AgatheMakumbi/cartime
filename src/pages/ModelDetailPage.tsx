@@ -33,7 +33,29 @@ export function ModelDetailPage() {
           <p className="model-year">{model.year}</p>
         </div>
         <div className="model-hero">
+          <button
+            className="hero-arrow hero-arrow-left"
+            onClick={() => {
+              const currentIndex = gallery.indexOf(activeImage)
+              const prevIndex = currentIndex > 0 ? currentIndex - 1 : gallery.length - 1
+              setActiveImage(gallery[prevIndex])
+            }}
+            aria-label="Image précédente"
+          >
+            ←
+          </button>
           <img src={activeImage} alt={model.name} />
+          <button
+            className="hero-arrow hero-arrow-right"
+            onClick={() => {
+              const currentIndex = gallery.indexOf(activeImage)
+              const nextIndex = currentIndex < gallery.length - 1 ? currentIndex + 1 : 0
+              setActiveImage(gallery[nextIndex])
+            }}
+            aria-label="Image suivante"
+          >
+            →
+          </button>
         </div>
         <ImageGallery images={gallery} active={activeImage} onSelect={setActiveImage} />
       </div>
