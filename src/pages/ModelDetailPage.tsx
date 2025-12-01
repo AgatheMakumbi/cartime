@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import { AddToCollection } from '../components/AddToCollection'
 import { ImageGallery } from '../components/ImageGallery'
 import { getBrandById, getModelById } from '../data/mockData'
@@ -23,17 +23,22 @@ export function ModelDetailPage() {
 
   return (
     <section className="model-shell">
+      <Link to={`/brands/${brandId}`} className="model-back-button" aria-label="Retour à la frise">
+        ←
+      </Link>
       <div className="model-media">
-        <ImageGallery images={gallery} active={activeImage} onSelect={setActiveImage} />
+        <div className="model-header">
+          <p className="eyebrow">{brand.name}</p>
+          <h1>{model.name}</h1>
+          <p className="model-year">{model.year}</p>
+        </div>
         <div className="model-hero">
           <img src={activeImage} alt={model.name} />
         </div>
+        <ImageGallery images={gallery} active={activeImage} onSelect={setActiveImage} />
       </div>
 
       <div className="model-content">
-        <p className="eyebrow">{brand.name}</p>
-        <h1>{model.name}</h1>
-        <p className="model-year">{model.year}</p>
 
         <div className="model-section">
           <h2>Technical description</h2>
