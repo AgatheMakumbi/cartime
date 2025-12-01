@@ -38,23 +38,41 @@ export const brands: Brand[] = [
     timelineEnd: 2025,
     models: [
       {
-        id: 'bmw-2002',
-        name: 'BMW 2002 Turbo',
-        year: 1973,
+        id: 'bmw-507',
+        name: 'BMW 507',
+        year: 1956,
         heroImage:
-          'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=80',
+          'https://cdn.motor1.com/images/mgl/P3Gkq4/s1/1958-bmw-507-series-ii-for-sale.jpg',
         gallery: [
-          'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1427751840561-9852520f8ce8?auto=format&fit=crop&w=800&q=80',
+          'https://cdn.motor1.com/images/mgl/P3Gkq4/s1/1958-bmw-507-series-ii-for-sale.jpg',
+          'https://upload.wikimedia.org/wikipedia/commons/3/35/BMW_507.jpg',
+          'https://cdn.bmwblog.com/wp-content/uploads/2020/11/1-of-few-1957-bmw-507-series-ii-could-be-someones-a-bargain-at-525k_6.jpg',
         ],
         technical:
-          '2.0L turbocharged inline-four, rear-wheel drive, 170 hp, 4-speed manual gearbox.',
+          '3.2L V8 engine, 150 hp, 4-speed manual gearbox, aluminum bodywork by Albrecht von Goertz.',
         history:
-          'The 2002 Turbo paved the way for BMW’s modern sporty DNA and helped democratize turbocharging in Europe.',
+          'Iconic roadster designed to compete with Mercedes 300SL, owned by Elvis Presley. Only 252 units produced.',
         anecdotes: [
-          'First turbocharged production model from BMW.',
-          'The reversed “Turbo” script on the front spoiler was often removed to avoid provoking other drivers.',
+          'Elvis Presley owned a white 507 during his military service in Germany.',
+          'The design influenced future BMW roadsters including the Z8.',
+        ],
+      },
+      {
+        id: 'bmw-m1',
+        name: 'BMW M1',
+        year: 1978,
+        heroImage:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/BMW_M1_%28E26%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M1_%28E26%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
+        gallery: [
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/BMW_M1_%28E26%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M1_%28E26%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
+        ],
+        technical:
+          '3.5L inline-six M88 engine, 277 hp, 5-speed manual gearbox, mid-engine layout.',
+        history:
+          'BMW\'s first and only mid-engine supercar, developed with Lamborghini. Racing version dominated Procar Championship.',
+        anecdotes: [
+          'Only 453 road-going examples were built.',
+          'Designed by Giorgetto Giugiaro, it featured gullwing doors in early prototypes.',
         ],
       },
       {
@@ -62,10 +80,9 @@ export const brands: Brand[] = [
         name: 'BMW M3 E30',
         year: 1986,
         heroImage:
-          'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=80',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/BMW_M3_E30_%28E30%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M3_E30_%28E30%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
         gallery: [
-          'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1511910849309-0cc02e42e42e?auto=format&fit=crop&w=800&q=80',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/BMW_M3_E30_%28E30%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M3_E30_%28E30%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
         ],
         technical:
           'Naturally aspirated 2.3L S14, 200 hp, 5-speed manual gearbox, widened bodywork.',
@@ -77,22 +94,57 @@ export const brands: Brand[] = [
         ],
       },
       {
+        id: 'bmw-m5-e28',
+        name: 'BMW M5 E28',
+        year: 1985,
+        heroImage:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/BMW_M5_E28_%28E28%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M5_E28_%28E28%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
+        gallery: [
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/BMW_M5_E28_%28E28%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M5_E28_%28E28%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
+        ],
+        technical:
+          '3.5L inline-six M88/3 engine, 286 hp, 5-speed manual gearbox, rear-wheel drive.',
+        history:
+          'The first M5, created by hand-assembling M1 engines into 5-Series sedans. The original "super sedan".',
+        anecdotes: [
+          'Only 2,191 units were produced, all hand-built.',
+          'It was the fastest production sedan in the world at its launch.',
+        ],
+      },
+      {
         id: 'bmw-i8',
         name: 'BMW i8',
         year: 2014,
         heroImage:
-          'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/BMW_i8_%28I15%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_i8_%28I15%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
         gallery: [
-          'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/BMW_i8_%28I15%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg/1280px-BMW_i8_%28I15%29_%E2%80%93_Frontansicht%2C_1._Juli_2012%2C_D%C3%BCsseldorf.jpg',
         ],
         technical:
-          'Plug-in hybrid with turbocharged 3-cylinder engine + electric motor, intelligent all-wheel drive.',
+          'Plug-in hybrid with turbocharged 3-cylinder engine + electric motor, 362 hp combined, intelligent all-wheel drive.',
         history:
-          'The i8 symbolizes BMW’s move toward high-end electrification with a futuristic silhouette.',
+          'The i8 symbolizes BMW\'s move toward high-end electrification with a futuristic silhouette and butterfly doors.',
         anecdotes: [
           'Carbon structure and butterfly doors help keep weight in check.',
           'Blue light signatures highlight the BMW i sub-brand.',
+        ],
+      },
+      {
+        id: 'bmw-m4-csl',
+        name: 'BMW M4 CSL',
+        year: 2022,
+        heroImage:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BMW_M4_CSL_%28G82%29_%E2%80%93_Frontansicht%2C_1._Juli_2022%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M4_CSL_%28G82%29_%E2%80%93_Frontansicht%2C_1._Juli_2022%2C_D%C3%BCsseldorf.jpg',
+        gallery: [
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/BMW_M4_CSL_%28G82%29_%E2%80%93_Frontansicht%2C_1._Juli_2022%2C_D%C3%BCsseldorf.jpg/1280px-BMW_M4_CSL_%28G82%29_%E2%80%93_Frontansicht%2C_1._Juli_2022%2C_D%C3%BCsseldorf.jpg',
+        ],
+        technical:
+          '3.0L twin-turbo inline-six S58, 550 hp, 8-speed M Steptronic transmission, rear-wheel drive, lightweight construction.',
+        history:
+          'Limited edition track-focused M4 celebrating 50 years of BMW M. Only 1,000 units produced worldwide.',
+        anecdotes: [
+          'CSL stands for "Coupe, Sport, Lightweight" - a legendary badge from the E46 M3 CSL.',
+          '100 kg lighter than the standard M4 thanks to carbon fiber and titanium components.',
         ],
       },
     ],

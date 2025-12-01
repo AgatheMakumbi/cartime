@@ -352,10 +352,9 @@
 }
 
 .timeline-shell {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-  border-radius: 1.5rem;
-  border: 1px solid rgba(217, 217, 217, 0.05);
-  padding: 2.5rem 2rem 3.5rem;
+  background: transparent;
+  border: none;
+  padding: 2.5rem 0 3.5rem;
   position: relative;
 }
 
@@ -399,7 +398,8 @@
 
 .timeline-model-layer {
   position: relative;
-  min-height: 140px;
+  min-height: 280px;
+  padding-top: 1rem;
 }
 
 .timeline-car {
@@ -412,42 +412,45 @@
 }
 
 .car-icon {
-  width: 68px;
-  height: 48px;
-  border-radius: 16px;
-  background: rgba(126, 200, 227, 0.12);
-  border: 1px solid rgba(126, 200, 227, 0.4);
+  width: 140px;
+  height: 90px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid rgba(126, 200, 227, 0.4);
   position: relative;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-icon:hover {
+  transform: translateY(-6px) scale(1.08);
+  border-color: rgba(126, 200, 227, 0.9);
+  box-shadow: 0 12px 32px rgba(126, 200, 227, 0.4);
+  z-index: 10;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  background: transparent;
+  border-radius: 10px;
 }
 
 .car-icon-body {
-  position: absolute;
-  width: 42px;
-  height: 16px;
-  background: #7ec8e3;
-  border-radius: 12px;
-  top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: none;
 }
 
 .car-icon-wheel,
 .car-icon-wheel.second {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #050608;
-  border: 2px solid #7ec8e3;
-  border-radius: 50%;
-  bottom: 6px;
-}
-
-.car-icon-wheel {
-  left: 14px;
-}
-
-.car-icon-wheel.second {
-  right: 14px;
+  display: none;
 }
 
 .model-tooltip {
