@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage'
 import { BrandTimelinePage } from './pages/BrandTimelinePage'
 import { ModelDetailPage } from './pages/ModelDetailPage'
 import { CollectionsPage } from './pages/CollectionsPage'
+import { CollectionDetailPage } from './pages/CollectionDetailPage'
 import { BlogPage } from './pages/BlogPage'
 import { BlogArticlePage } from './pages/BlogArticlePage'
 import { ProfilePage } from './pages/ProfilePage'
@@ -22,6 +23,7 @@ function App() {
           <Route path="/brands/:brandId" element={<BrandTimelinePage />} />
           <Route path="/brands/:brandId/models/:modelId" element={<ModelDetailPage />} />
           <Route path="/collections" element={<CollectionsPage />} />
+          <Route path="/collections/:collectionId" element={<CollectionDetailPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:articleId" element={<BlogArticlePage />} />
           <Route path="/profile" element={<ProfilePage />} />

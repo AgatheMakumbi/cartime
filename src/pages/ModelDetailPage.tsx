@@ -72,11 +72,7 @@ export function ModelDetailPage() {
         </div>
         <div className="model-section">
           <h2>Anecdotes</h2>
-          <ul>
-            {model.anecdotes.map((fact) => (
-              <li key={fact}>{fact}</li>
-            ))}
-          </ul>
+          <p>{model.anecdotes.join(' ')}</p>
         </div>
 
         <div className="model-actions">
