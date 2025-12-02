@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 
 const navItems = [
-  { path: '/map', label: 'Map' },
+  { path: '/', label: 'Map' },
   { path: '/brands', label: 'Brands' },
   { path: '/blog', label: 'Blog' },
   { path: '/collections', label: 'Collections' },
