@@ -1260,6 +1260,85 @@
   border-color: rgba(255, 107, 107, 0.5) !important;
 }
 
+.logout-button {
+  background: transparent;
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  color: #ff6b6b;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.logout-button:hover {
+  background: rgba(255, 107, 107, 0.1);
+  border-color: rgba(255, 107, 107, 0.5);
+}
+
+.profile-message {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.profile-message.success {
+  background: rgba(126, 200, 227, 0.1);
+  border: 1px solid rgba(126, 200, 227, 0.3);
+  color: #7ec8e3;
+}
+
+.profile-message.error {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  color: #ff6b6b;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.profile-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-form label span {
+  color: #8b9097;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.profile-form input {
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(217, 217, 217, 0.2);
+  border-radius: 0.75rem;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.profile-form input:focus {
+  outline: none;
+  border-color: #7ec8e3;
+  background: rgba(126, 200, 227, 0.05);
+}
+
+.profile-form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
 .lock-badge {
   font-size: 0.85rem;
   color: #8b9097;

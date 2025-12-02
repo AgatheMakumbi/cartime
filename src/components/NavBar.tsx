@@ -67,11 +67,7 @@ export function NavBar() {
         ))}
       </nav>
       <div className="nav-actions">
-        {isAuthenticated ? (
-          <Link to="/profile" className="primary-button">
-            Profile
-          </Link>
-        ) : (
+        {!isAuthenticated && (
           <>
             <Link to="/login" className="secondary-button">
               Login

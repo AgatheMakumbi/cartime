@@ -91,7 +91,7 @@ export function AuthPage({ mode }: AuthPageProps) {
         )}
         
         <button type="submit" className="primary-button full">
-          {isSignup ? 'Create account' : 'Enter garage'}
+          {isSignup ? 'Create account' : 'Log in'}
         </button>
         <p className="auth-switch">
           {isSignup ? 'Already registered?' : 'New here?'}{' '}

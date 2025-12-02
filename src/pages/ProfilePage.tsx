@@ -6,6 +6,14 @@ import type { User } from '../utils/authStore'
 export function ProfilePage() {
   const navigate = useNavigate()
   const [user, setUser] = useState<User | null>(authStore.getCurrentUser())
+  const [isEditingInfo, setIsEditingInfo] = useState(false)
+  const [isChangingPassword, setIsChangingPassword] = useState(false)
+  const [editedCity, setEditedCity] = useState('')
+  const [editedDrivingStyle, setEditedDrivingStyle] = useState('')
+  const [currentPassword, setCurrentPassword] = useState('')
+  const [newPassword, setNewPassword] = useState('')
+  const [confirmNewPassword, setConfirmNewPassword] = useState('')
+  const [message, setMessage] = useState('')
   const notificationTags = ['Weekly drop digest']
 
   useEffect(() => {
@@ -17,11 +25,60 @@ export function ProfilePage() {
     return () => window.removeEventListener('auth-changed', handleAuthChange)
   }, [])
 
+  useEffect(() => {
+    if (user) {
+      setEditedCity(user.city)
+      setEditedDrivingStyle(user.drivingStyle)
+    }
+  }, [user])
+
   const handleLogout = () => {
     if (confirm('Are you sure you want to log out?')) {
       authStore.logout()
       navigate('/login')
     }
+  }
+
+  const handleUpdatePassword = () => {
+    setMessage('')
+    if (!currentPassword || !newPassword || !confirmNewPassword) {
+      setMessage('Please fill all password fields')
+      return
+    }
+    if (currentPassword !== '12345') {
+      setMessage('Current password is incorrect')
+      return
+    }
+    if (newPassword !== confirmNewPassword) {
+      setMessage('New passwords do not match')
+      return
+    }
+    if (newPassword.length < 5) {
+      setMessage('Password must be at least 5 characters')
+      return
+    }
+    // Simulation de mise à jour
+    setMessage('Password updated successfully!')
+    setCurrentPassword('')
+    setNewPassword('')
+    setConfirmNewPassword('')
+    setTimeout(() => {
+      setIsChangingPassword(false)
+      setMessage('')
+    }, 2000)
+  }
+
+  const handleUpdateInfo = () => {
+    if (!editedCity.trim() || !editedDrivingStyle.trim()) {
+      setMessage('Please fill all fields')
+      return
+    }
+    // Simulation de mise à jour des infos
+    setMessage('Information updated successfully!')
+    setTimeout(() => {
+      setIsEditingInfo(false)
+      setMessage('')
+    }, 2000)
   }
 
   // Rediriger vers login si non connecté
@@ -53,10 +110,111 @@ export function ProfilePage() {
           <p className="profile-meta">Premium member · Collection sync active</p>
         </div>
         <div className="profile-actions">
-          <button className="secondary-button">Update password</button>
-          <button className="primary-button">Edit my information</button>
+          <button 
+            className="secondary-button"
+            onClick={() => {
+              setIsChangingPassword(!isChangingPassword)
+              setIsEditingInfo(false)
+              setMessage('')
+            }}
+          >
+            Update password
+          </button>
+          <button 
+            className="primary-button"
+            onClick={() => {
+              setIsEditingInfo(!isEditingInfo)
+              setIsChangingPassword(false)
+              setMessage('')
+            }}
+          >
+            Edit my information
+          </button>
         </div>
       </div>
+
+      {message && (
+        <div className={`profile-message ${message.includes('success') ? 'success' : 'error'}`}>
+          {message}
+        </div>
+      )}
+
+      {isChangingPassword && (
+        <div className="profile-card">
+          <h2>Update Password</h2>
+          <div className="profile-form">
+            <label>
+              <span>Current password</span>
+              <input
+                type="password"
+                placeholder="Enter current password"
+                value={currentPassword}
+                onChange={(e) => setCurrentPassword(e.target.value)}
+              />
+            </label>
+            <label>
+              <span>New password</span>
+              <input
+                type="password"
+                placeholder="Enter new password"
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+              />
+            </label>
+            <label>
+              <span>Confirm new password</span>
+              <input
+                type="password"
+                placeholder="Confirm new password"
+                value={confirmNewPassword}
+                onChange={(e) => setConfirmNewPassword(e.target.value)}
+              />
+            </label>
+            <div className="profile-form-actions">
+              <button className="secondary-button" onClick={() => setIsChangingPassword(false)}>
+                Cancel
+              </button>
+              <button className="primary-button" onClick={handleUpdatePassword}>
+                Update Password
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isEditingInfo && (
+        <div className="profile-card">
+          <h2>Edit Information</h2>
+          <div className="profile-form">
+            <label>
+              <span>City</span>
+              <input
+                type="text"
+                placeholder="Enter your city"
+                value={editedCity}
+                onChange={(e) => setEditedCity(e.target.value)}
+              />
+            </label>
+            <label>
+              <span>Driving style</span>
+              <input
+                type="text"
+                placeholder="Enter your driving style"
+                value={editedDrivingStyle}
+                onChange={(e) => setEditedDrivingStyle(e.target.value)}
+              />
+            </label>
+            <div className="profile-form-actions">
+              <button className="secondary-button" onClick={() => setIsEditingInfo(false)}>
+                Cancel
+              </button>
+              <button className="primary-button" onClick={handleUpdateInfo}>
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="profile-grid">
         <article className="profile-panel compact">
@@ -92,8 +250,8 @@ export function ProfilePage() {
         <article className="profile-panel wide">
           <h2>Account actions</h2>
           <div className="profile-actions-list">
-            <button className="ghost-button danger-action" onClick={handleLogout}>
-              🚪 Log out
+            <button className="logout-button" onClick={handleLogout}>
+              Log out
             </button>
           </div>
         </article>
