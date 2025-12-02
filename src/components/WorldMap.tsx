@@ -1,91 +1,117 @@
 export function WorldMap() {
   return (
     <svg
-      viewBox="0 0 1200 600"
+      viewBox="0 0 1000 500"
       className="world-map-svg"
-      preserveAspectRatio="xMidYMid slice"
+      preserveAspectRatio="none"
     >
-      {/* Ocean background - blue */}
-      <rect width="100%" height="100%" fill="#0a1628" />
+      {/* Ocean background - dark blue */}
+      <rect width="1000" height="500" fill="#0a1628" />
       
-      {/* Continents - black with subtle border */}
-      <g fill="#050608" stroke="rgba(126, 200, 227, 0.3)" strokeWidth="0.5">
-        {/* North America */}
-        <path d="M 120 80 L 180 60 L 220 70 L 280 90 L 300 100 L 290 130 L 260 150 L 240 180 L 200 200 L 180 250 L 160 280 L 140 300 L 100 290 L 80 260 L 60 220 L 50 180 L 60 140 L 80 100 Z" />
-        <path d="M 140 300 L 180 320 L 200 350 L 220 380 L 200 400 L 160 390 L 130 360 L 120 330 Z" />
-        {/* Central America */}
-        <path d="M 200 400 L 220 420 L 240 450 L 230 470 L 210 460 L 190 430 L 195 410 Z" />
-        
-        {/* South America */}
-        <path d="M 230 470 L 270 480 L 300 500 L 320 540 L 310 580 L 280 600 L 250 580 L 240 540 L 250 500 L 235 485 Z" />
-        <path d="M 320 540 L 340 520 L 350 540 L 340 570 L 320 580 L 315 560 Z" />
-        
-        {/* Europe */}
-        <path d="M 480 80 L 520 70 L 560 80 L 600 100 L 620 130 L 600 160 L 560 170 L 520 160 L 480 140 L 460 110 Z" />
-        <path d="M 520 160 L 540 180 L 560 200 L 540 220 L 500 210 L 490 190 L 500 170 Z" />
-        {/* UK & Ireland */}
-        <path d="M 460 110 L 475 100 L 490 110 L 485 130 L 465 135 L 455 120 Z" />
-        <path d="M 445 115 L 455 110 L 460 125 L 450 130 L 440 125 Z" />
-        {/* Scandinavia */}
-        <path d="M 520 50 L 540 40 L 560 50 L 570 80 L 550 100 L 530 90 L 520 70 Z" />
-        <path d="M 560 50 L 590 40 L 610 60 L 600 90 L 575 80 L 565 60 Z" />
-        {/* Italy */}
-        <path d="M 530 180 L 540 200 L 535 230 L 520 240 L 515 220 L 520 195 Z" />
-        {/* Iberian Peninsula */}
-        <path d="M 460 160 L 490 155 L 500 180 L 490 210 L 455 215 L 445 190 L 450 170 Z" />
-        
-        {/* Africa */}
-        <path d="M 490 220 L 540 210 L 600 230 L 640 280 L 650 350 L 620 420 L 560 480 L 500 500 L 460 460 L 440 400 L 460 340 L 480 280 L 475 240 Z" />
-        {/* Madagascar */}
-        <path d="M 660 420 L 680 410 L 690 440 L 680 480 L 660 485 L 650 450 Z" />
-        
-        {/* Asia */}
-        <path d="M 620 80 L 700 60 L 800 70 L 900 100 L 1000 120 L 1050 150 L 1080 200 L 1100 250 L 1080 300 L 1020 320 L 950 300 L 880 280 L 820 250 L 780 200 L 720 160 L 680 140 L 640 130 L 620 110 Z" />
-        {/* Middle East */}
-        <path d="M 640 200 L 700 190 L 740 220 L 720 260 L 680 280 L 640 270 L 620 240 L 630 210 Z" />
-        {/* India */}
-        <path d="M 780 260 L 820 250 L 850 290 L 830 350 L 790 380 L 760 350 L 770 300 Z" />
-        {/* Southeast Asia */}
-        <path d="M 880 280 L 920 270 L 960 300 L 940 350 L 900 360 L 870 330 L 875 300 Z" />
-        {/* Japan */}
-        <path d="M 1040 180 L 1060 170 L 1075 190 L 1070 220 L 1050 230 L 1035 210 Z" />
-        <path d="M 1050 230 L 1065 240 L 1060 260 L 1045 255 L 1045 240 Z" />
-        {/* Korean Peninsula */}
-        <path d="M 1010 180 L 1025 175 L 1035 200 L 1025 220 L 1010 215 L 1005 195 Z" />
-        {/* Taiwan */}
-        <path d="M 1020 280 L 1035 275 L 1040 295 L 1030 305 L 1020 295 Z" />
-        {/* Philippines */}
-        <path d="M 1000 320 L 1015 315 L 1020 340 L 1010 360 L 995 350 L 995 330 Z" />
-        
-        {/* Australia */}
-        <path d="M 920 420 L 1000 400 L 1080 430 L 1100 500 L 1050 560 L 960 550 L 910 500 L 900 450 Z" />
-        {/* New Zealand */}
-        <path d="M 1130 520 L 1145 515 L 1155 540 L 1145 560 L 1130 555 L 1125 535 Z" />
-        <path d="M 1140 560 L 1155 565 L 1150 585 L 1135 580 L 1135 570 Z" />
-        
-        {/* Indonesia */}
-        <path d="M 940 380 L 980 375 L 1020 390 L 1000 420 L 960 425 L 930 410 Z" />
-        <path d="M 1020 390 L 1060 385 L 1090 400 L 1070 430 L 1030 425 L 1015 410 Z" />
-        
-        {/* Greenland */}
-        <path d="M 340 30 L 400 20 L 440 40 L 450 80 L 420 110 L 370 100 L 340 70 Z" />
-        
-        {/* Iceland */}
-        <path d="M 420 70 L 445 65 L 455 80 L 445 95 L 425 90 L 415 80 Z" />
+      {/* Subtle grid lines */}
+      <g stroke="rgba(126, 200, 227, 0.1)" strokeWidth="0.5">
+        {/* Latitude lines */}
+        <line x1="0" y1="83" x2="1000" y2="83" />
+        <line x1="0" y1="167" x2="1000" y2="167" />
+        <line x1="0" y1="250" x2="1000" y2="250" />
+        <line x1="0" y1="333" x2="1000" y2="333" />
+        <line x1="0" y1="417" x2="1000" y2="417" />
+        {/* Longitude lines */}
+        <line x1="167" y1="0" x2="167" y2="500" />
+        <line x1="333" y1="0" x2="333" y2="500" />
+        <line x1="500" y1="0" x2="500" y2="500" />
+        <line x1="667" y1="0" x2="667" y2="500" />
+        <line x1="833" y1="0" x2="833" y2="500" />
       </g>
       
-      {/* Ocean wave pattern for texture */}
+      {/* Continents - black land masses with cyan border */}
+      <g fill="#050608" stroke="#7ec8e3" strokeWidth="0.8" strokeOpacity="0.4">
+        
+        {/* North America */}
+        {/* Main landmass - USA/Canada around lng -100 (x=222), lat 45 (y=125) */}
+        <path d="M 80 50 Q 120 35 180 45 L 250 60 Q 300 85 320 130 L 310 175 Q 280 215 240 240 L 190 260 Q 140 265 100 245 L 70 200 Q 45 150 55 100 L 80 50 Z" />
+        {/* Alaska */}
+        <path d="M 45 70 Q 70 55 95 65 L 85 95 Q 60 105 45 90 Z" />
+        {/* Mexico & Central America */}
+        <path d="M 120 245 Q 160 255 190 295 L 210 345 Q 190 375 150 365 L 125 325 Q 105 285 120 245 Z" />
+        
+        {/* South America - around lng -60 (x=333), lat -15 (y=292) */}
+        <path d="M 210 365 Q 260 355 300 395 L 330 465 Q 315 530 265 545 L 215 535 Q 175 495 190 435 L 210 365 Z" />
+        
+        {/* Greenland */}
+        <path d="M 340 25 Q 390 10 430 25 L 445 60 Q 435 95 390 100 L 350 85 Q 325 55 340 25 Z" />
+        
+        {/* Iceland */}
+        <path d="M 420 65 Q 440 55 455 70 L 450 85 Q 435 95 420 80 Z" />
+        
+        {/* Europe - around lng 10 (x=528), lat 50 (y=111) */}
+        {/* UK & Ireland */}
+        <path d="M 475 100 Q 490 90 505 105 L 500 130 Q 485 140 475 125 Z" />
+        <path d="M 460 110 Q 470 105 480 115 L 475 130 Q 465 135 460 125 Z" />
+        {/* Scandinavia */}
+        <path d="M 510 50 Q 540 35 570 50 L 585 90 Q 570 125 540 130 L 505 110 Q 495 75 510 50 Z" />
+        {/* Western Europe - France, Germany, etc. */}
+        <path d="M 490 130 Q 530 120 565 135 L 590 160 Q 595 195 575 225 L 540 240 Q 495 235 480 200 L 475 165 Q 480 145 490 130 Z" />
+        {/* Iberian Peninsula */}
+        <path d="M 460 175 Q 485 165 505 185 L 500 220 Q 475 240 455 225 L 450 195 Z" />
+        {/* Italy */}
+        <path d="M 530 200 Q 545 190 555 210 L 550 255 Q 535 275 520 260 L 525 225 Z" />
+        {/* Eastern Europe */}
+        <path d="M 565 100 Q 620 85 670 105 L 700 150 Q 690 195 645 215 L 595 205 Q 560 175 565 140 Z" />
+        
+        {/* Africa - around lng 20 (x=556), lat 5 (y=236) */}
+        <path d="M 490 255 Q 545 240 600 265 L 655 340 Q 670 420 635 485 L 565 535 Q 490 545 455 500 L 440 420 Q 450 335 475 285 Z" />
+        {/* Madagascar */}
+        <path d="M 675 420 Q 695 410 710 430 L 705 485 Q 690 505 675 490 L 670 450 Z" />
+        
+        {/* Middle East */}
+        <path d="M 615 220 Q 670 205 720 230 L 740 285 Q 720 330 665 340 L 615 320 Q 595 275 615 220 Z" />
+        
+        {/* Russia/Asia - around lng 100 (x=778), lat 55 (y=97) */}
+        <path d="M 670 50 Q 780 30 900 55 L 980 95 Q 1000 140 990 185 L 935 200 Q 860 190 790 170 L 720 145 Q 680 115 685 80 Z" />
+        
+        {/* China & Mongolia */}
+        <path d="M 780 165 Q 860 155 930 185 L 965 240 Q 945 295 890 315 L 815 305 Q 760 275 760 225 L 780 165 Z" />
+        
+        {/* India */}
+        <path d="M 735 290 Q 780 270 820 300 L 830 365 Q 800 420 750 410 L 715 360 Q 710 320 735 290 Z" />
+        
+        {/* Southeast Asia */}
+        <path d="M 830 310 Q 875 300 910 330 L 920 385 Q 890 430 845 420 L 815 375 Q 810 340 830 310 Z" />
+        
+        {/* Japan - lng 138 (x=883), lat 36 (y=150) */}
+        <path d="M 920 130 Q 940 120 955 140 L 950 175 Q 935 195 920 180 L 915 155 Z" />
+        <path d="M 930 180 Q 945 190 940 215 L 925 220 Q 915 205 925 190 Z" />
+        
+        {/* Korean Peninsula */}
+        <path d="M 895 160 Q 910 155 920 175 L 915 205 Q 900 215 890 200 L 890 175 Z" />
+        
+        {/* Taiwan */}
+        <path d="M 910 260 Q 925 255 930 275 L 920 290 Q 905 288 910 270 Z" />
+        
+        {/* Indonesia & Philippines */}
+        <path d="M 860 385 Q 900 375 940 395 L 960 435 Q 940 475 890 465 L 850 435 Z" />
+        <path d="M 935 320 Q 955 315 965 335 L 960 370 Q 945 380 935 365 Z" />
+        
+        {/* Australia - lng 135 (x=875), lat -25 (y=319) */}
+        <path d="M 870 410 Q 940 390 1000 430 L 1025 495 Q 995 550 920 550 L 860 520 Q 830 475 850 430 Z" />
+        
+        {/* New Zealand */}
+        <path d="M 1040 485 Q 1055 480 1065 500 L 1060 530 Q 1045 540 1035 525 Z" />
+        <path d="M 1050 535 Q 1065 540 1060 560 L 1045 565 Q 1035 555 1045 545 Z" />
+      </g>
+      
+      {/* Ocean texture pattern */}
       <defs>
-        <pattern id="oceanPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-          <circle cx="10" cy="10" r="1" fill="rgba(126, 200, 227, 0.05)" />
-          <circle cx="50" cy="30" r="1" fill="rgba(126, 200, 227, 0.05)" />
-          <circle cx="30" cy="60" r="1" fill="rgba(126, 200, 227, 0.05)" />
-          <circle cx="70" cy="80" r="1" fill="rgba(126, 200, 227, 0.05)" />
-          <circle cx="90" cy="50" r="1" fill="rgba(126, 200, 227, 0.05)" />
+        <pattern id="oceanDots" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+          <circle cx="8" cy="8" r="0.6" fill="rgba(126, 200, 227, 0.05)" />
+          <circle cx="30" cy="20" r="0.6" fill="rgba(126, 200, 227, 0.05)" />
+          <circle cx="20" cy="40" r="0.6" fill="rgba(126, 200, 227, 0.05)" />
+          <circle cx="50" cy="52" r="0.6" fill="rgba(126, 200, 227, 0.05)" />
+          <circle cx="55" cy="28" r="0.6" fill="rgba(126, 200, 227, 0.05)" />
         </pattern>
       </defs>
-      <rect width="100%" height="100%" fill="url(#oceanPattern)" />
+      <rect width="1000" height="500" fill="url(#oceanDots)" />
     </svg>
   )
 }
-

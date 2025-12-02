@@ -49,12 +49,11 @@ export const brands: Brand[] = [
           'https://cdn.bmwblog.com/wp-content/uploads/2020/11/1-of-few-1957-bmw-507-series-ii-could-be-someones-a-bargain-at-525k_6.jpg',
         ],
         technical:
-          '3.2L V8 engine, 150 hp, 4-speed manual gearbox, aluminum bodywork by Albrecht von Goertz.',
+          'The BMW 507 is a two-seat roadster produced from 1956 to 1959. It is powered by a 3.2-liter all-aluminum V8 engine producing around 150 hp, paired with a 4-speed manual gearbox. The car features a lightweight aluminum body, double wishbone front suspension, and a rigid rear axle. Its design focused on elegance and grand-touring comfort rather than pure performance, though it was capable of reaching approximately 200 km/h.',
         history:
-          'Iconic roadster designed to compete with Mercedes 300SL, owned by Elvis Presley. Only 252 units produced.',
+          'Originally intended to be exported to the United States as a rival to Mercedes-Benz\'s 300SL, the BMW 507 was developed under the influence of American importer Max Hoffman. However, production costs were extremely high, leading to a much higher selling price than anticipated. Only 252 units were built, making it one of the rarest BMWs ever produced. Despite poor commercial success, the 507 later gained iconic status for its timeless design.',
         anecdotes: [
-          'Elvis Presley owned a white 507 during his military service in Germany.',
-          'The design influenced future BMW roadsters including the Z8.',
+          'Elvis Presley famously owned a BMW 507 during his military service in Germany. His car was originally white but repeatedly received lipstick marks from fans, prompting him to have it repainted red. Many 507s have unique histories due to their low production numbers, including custom configurations for celebrities. Today, surviving examples regularly sell for millions at auctions.',
         ],
       },
       {
@@ -69,12 +68,11 @@ export const brands: Brand[] = [
           'https://bmw-m1-club.com/wp-content/uploads/2021/02/bmw-m1-club-deutschland-ev-03-06_0007.jpg',
         ],
         technical:
-          '3.5L inline-six M88 engine, 277 hp, 5-speed manual gearbox, mid-engine layout.',
+          'The BMW M1 is a mid-engine sports car produced from 1978 to 1981. It is powered by a 3.5-liter inline-six engine (the M88/1) producing 273 hp in the road version, paired with a 5-speed ZF manual gearbox. The M1 features a tubular steel spaceframe chassis, fiberglass body panels, double wishbone suspension on all four corners, and rear-wheel drive. Its layout and engineering were designed to provide exceptional handling balance and racing-level performance — a major departure from BMW\'s usual front-engine lineup at the time.',
         history:
-          'BMW\'s first and only mid-engine supercar, developed with Lamborghini. Racing version dominated Procar Championship.',
+          'The M1 was initially developed in collaboration with Lamborghini for Group 4 and Group 5 racing homologation, but financial issues forced BMW to take over production. Ultimately, only 456 units were built, making it one of the rarest BMW road cars ever made. The car later became the basis for the Procar Championship, a one-make series where Formula 1 drivers competed using specially tuned M1 race cars. Although its racing career was limited, the M1 established BMW Motorsport\'s identity and paved the way for the future M lineup.',
         anecdotes: [
-          'Only 453 road-going examples were built.',
-          'Designed by Giorgetto Giugiaro, it featured gullwing doors in early prototypes.',
+          'The BMW M1 is the only BMW ever produced with a mid-engine layout for road use, giving it a cult status among enthusiasts. The Procar Championship turned it into a motorsport icon, with famous drivers like Niki Lauda and Nelson Piquet racing identical M1s. The car\'s design by Giorgetto Giugiaro became legendary, and the M1 was later honored by BMW in 2008 with the "M1 Hommage" concept car, reflecting its lasting influence on the brand.',
         ],
       },
       {
@@ -89,12 +87,11 @@ export const brands: Brand[] = [
           'https://images.squarespace-cdn.com/content/v1/6598c8e83ff0af0197ff19f9/547c6b4f-8296-47c1-947b-a1975cd36017/e30+m3.jpg',
         ],
         technical:
-          'Naturally aspirated 2.3L S14, 200 hp, 5-speed manual gearbox, widened bodywork.',
+          'The BMW M3 E30 (1986–1991) is powered by the S14 2.3-liter four-cylinder engine with outputs ranging from 192 to over 215 hp depending on the version. It features a highly revised chassis compared to the standard 3 Series, with wider tracks, improved suspension geometry, stronger brakes, and lightweight body panels. Its iconic box-flared fenders and aerodynamic improvements were designed specifically for motorsport homologation.',
         history:
-          'Developed for Group A homologation in DTM, the E30 M3 became the benchmark for sporty sedans.',
+          'The E30 M3 was created to comply with Group A touring car regulations. BMW was required to produce at least 5,000 road cars, resulting in a high-performance street model that became a legend. The M3 dominated racing series worldwide, including the DTM and the World Touring Car Championship. It remains one of BMW\'s most celebrated models and is often considered the purest M3 ever made.',
         anecdotes: [
-          'DTM champion as early as its first full season.',
-          'The rear wing is essential to reach its 235 km/h top speed safely.',
+          'The E30 M3 is one of the most successful touring cars in history, winning more races than any other M model. Its S14 engine is famously derived from BMW\'s Formula 1 program. Enthusiasts often note that the car\'s rear window angle is different from the regular E30 — one of many details changed purely for aerodynamic reasons.',
         ],
       },
       {
@@ -109,12 +106,11 @@ export const brands: Brand[] = [
           'https://cdn.dealeraccelerate.com/studio/1/51/5340/x/1988-bmw-m5',
         ],
         technical:
-          '3.5L inline-six M88/3 engine, 286 hp, 5-speed manual gearbox, rear-wheel drive.',
+          'The BMW M5 E28, introduced in 1984, is widely considered the first true "super sedan." It is powered by the M88/3 3.5-liter inline-six engine producing 286 hp, derived from the legendary BMW M1. Paired with a 5-speed manual transmission and rear-wheel drive, the E28 M5 reached 0–100 km/h in about 6.5 seconds, making it one of the fastest sedans of its time.',
         history:
-          'The first M5, created by hand-assembling M1 engines into 5-Series sedans. The original "super sedan".',
+          'The E28 M5 was hand-built by BMW Motorsport, with early versions assembled in Munich. Production was limited, with approximately 2,200 units made worldwide. The model established the identity of the M5 lineup: discreet styling combined with high-performance engineering. It set the foundation for future generations of performance luxury sedans.',
         anecdotes: [
-          'Only 2,191 units were produced, all hand-built.',
-          'It was the fastest production sedan in the world at its launch.',
+          'Many enthusiasts refer to the E28 M5 as the "wolf in sheep\'s clothing" because it looked almost identical to a regular 5 Series. In North America, only black-on-black units were sold initially, making those cars particularly collectible. Because they were partially hand-assembled, no two cars were exactly the same.',
         ],
       },
       {
@@ -129,12 +125,11 @@ export const brands: Brand[] = [
           'https://www.carbodydesign.com/media/2013/09/02-BMW-i8-Interior-02.jpg',
         ],
         technical:
-          'Plug-in hybrid with turbocharged 3-cylinder engine + electric motor, 362 hp combined, intelligent all-wheel drive.',
+          'Launched in 2014, the BMW i8 is a plug-in hybrid sports car featuring a 1.5-liter turbocharged three-cylinder engine combined with an electric motor. Together, they produce a total output of around 362 hp (later 374 hp). The i8 uses a carbon-fiber reinforced plastic (CFRP) passenger cell and an aluminum chassis, giving it a lightweight structure. It offers all-wheel drive thanks to the electric motor powering the front wheels and the combustion engine driving the rear.',
         history:
-          'The i8 symbolizes BMW\'s move toward high-end electrification with a futuristic silhouette and butterfly doors.',
+          'The BMW i8 debuted as part of BMW\'s "Project i" initiative to develop advanced hybrid and electric vehicles. It was first shown as a concept in 2011 and entered production in 2014. It remained in production until 2020. The i8 stood out for its futuristic design, scissor doors, and efficient yet sporty performance. It helped establish BMW as a leader in hybrid sports cars.',
         anecdotes: [
-          'Carbon structure and butterfly doors help keep weight in check.',
-          'Blue light signatures highlight the BMW i sub-brand.',
+          'The i8 was used as the official safety car in Formula E during its early seasons. Its unique engine configuration — a 3-cylinder powering a supercar — surprised many but became a technological showcase. Despite its performance, the i8 was designed more for innovation than track usage, which gives it a special place in BMW\'s lineup.',
         ],
       },
       {
@@ -149,12 +144,11 @@ export const brands: Brand[] = [
           'https://cdn-s-www.vosgesmatin.fr/images/68C8240C-3D0A-425C-8BAC-57FE6194CBB9/NW_raw/deux-rangements-pour-casque-a-l-arriere-console-centrale-entierement-en-cfrp-garniture-de-toit-de-couleur-anthracite-volant-en-alcantara-m-baguettes-de-garniture-interieure-en-fibre-de-carbone-badge-quot-csl-quot-sur-les-sieges-la-console-centrale-et-le-panneau-arriere-affichages-et-contre-elements-specifiques-m-1653033566.jpg',
         ],
         technical:
-          '3.0L twin-turbo inline-six S58, 550 hp, 8-speed M Steptronic transmission, rear-wheel drive, lightweight construction.',
+          'Released in 2022, the BMW M4 CSL is an ultra-performance version of the G82 M4. It is powered by a 3.0-liter twin-turbo inline-six (S58) producing 543 hp. The weight is reduced by approximately 100 kg compared to the M4 Competition thanks to carbon-fiber seats, a lighter exhaust, and reduced sound insulation. It features a track-focused suspension setup, increased boost pressure, and unique aerodynamics.',
         history:
-          'Limited edition track-focused M4 celebrating 50 years of BMW M. Only 1,000 units produced worldwide.',
+          'The M4 CSL continues BMW\'s CSL ("Coupe Sport Leichtbau" — lightweight sports coupe) tradition following the legendary 1973 3.0 CSL and the 2003 E46 M3 CSL. Production is extremely limited, with only 1,000 units worldwide. It represents the most hardcore version of the modern M4, focusing on track performance while remaining street-legal.',
         anecdotes: [
-          'CSL stands for "Coupe, Sport, Lightweight" - a legendary badge from the E46 M3 CSL.',
-          '100 kg lighter than the standard M4 thanks to carbon fiber and titanium components.',
+          'The M4 CSL holds one of the fastest Nürburgring lap times for a BMW road car, completing the circuit in 7:20.2. Its taillights use laser technology, making them visually distinct from any other BMW model. The car was sold out quickly despite its high price, becoming an instant collectible.',
         ],
       },
     ],

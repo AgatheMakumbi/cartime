@@ -6,9 +6,13 @@ type MapMarkerProps = {
   brand: Brand
 }
 
+// Convert lat/lng to percentage position on the map
+// Map uses viewBox 0 0 1000 500, coordinates need to match
 const latLngToPosition = (lat: number, lng: number) => {
+  // Longitude: -180 to 180 -> 0% to 100%
   const left = ((lng + 180) / 360) * 100
-  const top = 100 - ((lat + 90) / 180) * 100
+  // Latitude: 90 to -90 -> 0% to 100% (inverted because Y increases downward)
+  const top = ((90 - lat) / 180) * 100
   return { top: `${top}%`, left: `${left}%` }
 }
 
@@ -25,7 +29,7 @@ export function MapMarker({ brand }: MapMarkerProps) {
       className="map-marker"
       style={position}
       onClick={() => navigate(`/brands/${brand.id}`)}
-      aria-label={`Voir la frise ${brand.name}`}
+      aria-label={`View ${brand.name} timeline`}
     >
       <span className="marker-pulse" />
       <span className="marker-core">
